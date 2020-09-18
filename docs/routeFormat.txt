@@ -1,0 +1,21 @@
+/categories/
+-post to make new categories
+-get to fetch all categories
+
+/categories/id
+-get to fetch all videos from that category
+-update to make changes that category
+-delete to remove that category with its data
+
+/videos
+-get to fetch all the videos
+-post to create a new video
+
+/video/id
+-get to fetch single video information
+-update to make changes to that single video
+-delete to remove that video
+
+/comment
+-post to create a new comment
+-delete to remove a comment

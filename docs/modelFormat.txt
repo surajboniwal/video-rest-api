@@ -1,0 +1,15 @@
+-category
+ -title
+ -featured image
+ -videos
+
+-video
+ -title
+ -url
+ -likes
+ -comments
+
+-comment
+ -user
+ -comment
+ -replies
