@@ -14,7 +14,7 @@ require('dotenv').config();
 
 mongoose.connect(process.env.DB_STRING,{ useNewUrlParser: true , useUnifiedTopology: true })
 .then(()=>{
-    app.listen(process.env.PORT, ()=>{
+    app.listen(process.env.PORT || 80, ()=>{
         console.log('Server started on port' + process.env.PORT);
     });
 });
