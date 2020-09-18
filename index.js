@@ -16,7 +16,7 @@ app.listen(process.env.PORT, ()=>{
     console.log('Server started on port' + process.env.PORT);
 });
 
-mongoose.connect(process.env.DB_STRING,{ useNewUrlParser: true , useUnifiedTopology: true });
+mongoose.connect('mongodb+srv://surajboniwal:suraj1335@cluster0.dyodz.gcp.mongodb.net/VideoStatus?retryWrites=true&w=majority',{ useNewUrlParser: true , useUnifiedTopology: true });
 
 //Default middlewares
 app.use(bodyParser.json());
