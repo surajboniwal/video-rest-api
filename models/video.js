@@ -12,16 +12,19 @@ const VideoSchema = Schema({
     url: {
         type: String,
     },
-    likes:{
+    likes: {
         type: Number,
         default: 0
     },
-    categoryId:{
+    categoryId: {
         type: Number,
         ref: 'Category'
     },
-    comments:[{
-        type:Number,
+    featured: {
+        type: String,
+    },
+    comments: [{
+        type: Number,
         ref: 'Comment'
     }]
 }, { versionKey: false });
