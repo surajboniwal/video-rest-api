@@ -13,5 +13,5 @@ exports.createCategory = async function (req, res) {
 
 exports.getSingleCategory = async function (req, res) {
     category = await Category.findById(req.params.id).populate('videos');
-    res.send(category);
+    res.send(category.videos);
 };
