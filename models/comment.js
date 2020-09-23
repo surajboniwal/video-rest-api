@@ -11,11 +11,7 @@ const CommentSchema = Schema({
     },
     comment: {
         type: String,
-    },
-    replies: [{
-        type: Number,
-        ref: 'Comment'
-    }]
+    }
 }, { versionKey: false });
 
 module.exports = mongoose.model('Comment', CommentSchema);
